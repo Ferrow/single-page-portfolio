@@ -10,20 +10,27 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="/script.js" defer></script>
 
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
   <body>
     <header>
-      <nav class="container">
+      <nav class="nav container">
         <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <path fill="#030303" d="M0 0h64v64H0z" />
             <circle stroke="#FFF7F0" stroke-width="4" cx="32" cy="32" r="14" />
           </g>
         </svg>
-        <a href="#">Free Consultation</a>
+        <a href="#" class="btn--consult">Free Consultation</a>
       </nav>
     </header>
 
@@ -36,9 +43,10 @@
         </p>
       </div>
 
-      <div>
-        <div>
-          <svg width="128" height="192" xmlns="http://www.w3.org/2000/svg">
+      <div class="main--items">
+        <div class="main--items--one container--items">
+          <p>Graphic Design</p>
+          <svg width="128" height="192">
             <g fill="none" fill-rule="evenodd">
               <path fill="#552049" d="M0 0h64v128H0z" />
               <circle
@@ -90,13 +98,231 @@
               </g>
             </g>
           </svg>
-          <p>Graphic Design</p>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="main--items--twothree">
+          <div class="main--items--two container--items">
+            <p>UI/UX</p>
+            <svg width="64" height="64">
+              <g fill="none" fill-rule="evenodd">
+                <circle
+                  stroke="#030303"
+                  stroke-width="4"
+                  cx="48"
+                  cy="16"
+                  r="14"
+                />
+                <path fill="#EB7565" d="M0 0h32v32H0z" />
+                <g fill="#030303">
+                  <path
+                    d="M0 32h4v4H0zM14 32h4v4h-4zM28 32h4v4h-4zM0 46h4v4H0zM14 46h4v4h-4zM28 46h4v4h-4z"
+                  />
+                  <g><path d="M0 60h4v4H0zM14 60h4v4h-4zM28 60h4v4h-4z" /></g>
+                </g>
+                <path fill="#FFF7F0" d="m32 32 32 32V32z" />
+              </g>
+            </svg>
+          </div>
+          <div class="main--items--three container--items">
+            <p>Apps</p>
+            <svg width="64" height="64">
+              <g fill="none" fill-rule="evenodd">
+                <g transform="translate(0 32)">
+                  <rect fill="#552049" width="64" height="32" rx="16" />
+                  <circle
+                    stroke="#FFF7F0"
+                    stroke-width="4"
+                    cx="48"
+                    cy="16"
+                    r="14"
+                  />
+                </g>
+                <g fill="#030303">
+                  <path d="M0 14h4v4H0zM4 14h4v4H4zM28 14h4v4h-4z" />
+                </g>
+                <path fill="#755CDE" d="m32 0 32 32V0z" />
+                <g fill="#030303">
+                  <path d="M32 14h4v4h-4zM56 14h4v4h-4zM60 14h4v4h-4z" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="hidden main--items--two container--items">
+          <p>UI/UX</p>
+          <svg width="64" height="64">
+            <g fill="none" fill-rule="evenodd">
+              <circle
+                stroke="#030303"
+                stroke-width="4"
+                cx="48"
+                cy="16"
+                r="14"
+              />
+              <path fill="#EB7565" d="M0 0h32v32H0z" />
+              <g fill="#030303">
+                <path
+                  d="M0 32h4v4H0zM14 32h4v4h-4zM28 32h4v4h-4zM0 46h4v4H0zM14 46h4v4h-4zM28 46h4v4h-4z"
+                />
+                <g><path d="M0 60h4v4H0zM14 60h4v4h-4zM28 60h4v4h-4z" /></g>
+              </g>
+              <path fill="#FFF7F0" d="m32 32 32 32V32z" />
+            </g>
+          </svg>
+        </div>
+        <div class="hidden main--items--three container--items">
+          <p>Apps</p>
+          <svg width="64" height="64">
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(0 32)">
+                <rect fill="#552049" width="64" height="32" rx="16" />
+                <circle
+                  stroke="#FFF7F0"
+                  stroke-width="4"
+                  cx="48"
+                  cy="16"
+                  r="14"
+                />
+              </g>
+              <g fill="#030303">
+                <path d="M0 14h4v4H0zM4 14h4v4H4zM28 14h4v4h-4z" />
+              </g>
+              <path fill="#755CDE" d="m32 0 32 32V0z" />
+              <g fill="#030303">
+                <path d="M32 14h4v4h-4zM56 14h4v4h-4zM60 14h4v4h-4z" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="main--items--four container--items">
+          <p>Illustrations</p>
+          <svg width="128" height="64">
+            <g fill="none" fill-rule="evenodd">
+              <g transform="translate(64)">
+                <circle
+                  stroke="#FFF7F0"
+                  stroke-width="4"
+                  cx="48"
+                  cy="16"
+                  r="14"
+                />
+                <path fill="#755CDE" d="M0 0h32v32H0z" />
+                <g fill="#030303">
+                  <path
+                    d="M32 32h4v4h-4zM46 32h4v4h-4zM60 32h4v4h-4zM32 46h4v4h-4zM46 46h4v4h-4zM60 46h4v4h-4z"
+                  />
+                  <g><path d="M32 60h4v4h-4zM46 60h4v4h-4zM60 60h4v4h-4z" /></g>
+                </g>
+                <path fill="#F39E9E" d="m0 32 32 32V32z" />
+              </g>
+              <g fill="#030303">
+                <path
+                  d="M32 32h4v4h-4zM46 32h4v4h-4zM60 32h4v4h-4zM32 56h4v4h-4zM46 56h4v4h-4zM60 56h4v4h-4z"
+                />
+                <g><path d="M32 60h4v4h-4zM46 60h4v4h-4zM60 60h4v4h-4z" /></g>
+              </g>
+              <g fill="#030303">
+                <path
+                  d="M32 0h4v4h-4zM46 0h4v4h-4zM60 0h4v4h-4zM32 4h4v4h-4zM46 4h4v4h-4zM60 4h4v4h-4z"
+                />
+                <g><path d="M32 28h4v4h-4zM46 28h4v4h-4zM60 28h4v4h-4z" /></g>
+              </g>
+              <path fill="#61C4B7" d="m0 32 32 32V32z" />
+              <path fill="#FFF7F0" d="M32 0 0 32V0z" />
+            </g>
+          </svg>
+        </div>
+        <div class="main--items--five container--items">
+          <p>Photography</p>
+          <svg width="160" height="64">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#EB7565" d="M32 0h64v64H32z" />
+              <circle
+                stroke="#030303"
+                stroke-width="4"
+                cx="16"
+                cy="16"
+                r="14"
+              />
+              <circle
+                stroke="#FFF7F0"
+                stroke-width="4"
+                cx="64"
+                cy="32"
+                r="14"
+              />
+              <g fill="#030303">
+                <path
+                  d="M128 32h4v4h-4zM142 32h4v4h-4zM156 32h4v4h-4zM128 56h4v4h-4zM142 56h4v4h-4zM156 56h4v4h-4z"
+                />
+                <g>
+                  <path d="M128 60h4v4h-4zM142 60h4v4h-4zM156 60h4v4h-4z" />
+                </g>
+              </g>
+              <g fill="#030303">
+                <path
+                  d="M128 0h4v4h-4zM142 0h4v4h-4zM156 0h4v4h-4zM128 4h4v4h-4zM142 4h4v4h-4zM156 4h4v4h-4z"
+                />
+                <g>
+                  <path d="M128 28h4v4h-4zM142 28h4v4h-4zM156 28h4v4h-4z" />
+                </g>
+              </g>
+              <path fill="#FFF7F0" d="m96 32 32 32V32z" />
+              <path fill="#552049" d="m96 32 32 32V32z" />
+              <path fill="#F39E9E" d="M32 64 0 32v32z" />
+              <path fill="#FFF7F0" d="m96 32 32-32v32z" />
+            </g>
+          </svg>
+        </div>
+        <div class="main--items--six container--items">
+          <p>Motion Graphics</p>
+          <svg width="128" height="64">
+            <g fill="none" fill-rule="evenodd">
+              <circle
+                stroke="#F39E9E"
+                stroke-width="4"
+                cx="80"
+                cy="16"
+                r="14"
+              />
+              <circle
+                stroke-opacity=".5"
+                stroke="#F39E9E"
+                stroke-width="4"
+                cx="48"
+                cy="16"
+                r="14"
+              />
+              <circle
+                stroke-opacity=".25"
+                stroke="#F39E9E"
+                stroke-width="4"
+                cx="16"
+                cy="16"
+                r="14"
+              />
+              <circle
+                stroke="#FFF7F0"
+                stroke-width="4"
+                cx="112"
+                cy="16"
+                r="14"
+              />
+              <path fill="#F39E9E" d="M128 64 96 32v32z" />
+              <rect
+                fill="#F6A560"
+                x="32"
+                y="32"
+                width="64"
+                height="32"
+                rx="16"
+              />
+              <path
+                d="M0 50v-4h8v4H0Zm28 0v-4h8v4h-8Zm28 0v-4h8v4h-8Z"
+                fill="#FFF7F0"
+              />
+            </g>
+          </svg>
+        </div>
       </div>
       <div class="container hero">
         <img src="assets\image-amy.webp" alt="" />
@@ -107,20 +333,72 @@
             I’ve designed everything from brand illustrations to complete mobile
             apps. I’m also handy with a camera!
           </p>
-          <button>Free Consulting</button>
+          <button class="btn-free">Free Consultation</button>
         </div>
+      </div>
+
+      <div class="slider">
+        <h3>My Work</h3>
+
+        <div id="carousel">
+          <div class="slide">
+            <img src="/assets/image-slide-1.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/assets/image-slide-2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/assets/image-slide-3.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/assets/image-slide-4.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="/assets/image-slide-5.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="slider--buttons">
+          <button class="btn btn-left">
+            <svg viewBox="0 0 15 16" fill="none">
+              <path
+                d="M7.99992 0L0 7.99998L7.99992 16L9.68661 14.3133L4.56596 9.19271H14.8072V6.8072H4.56596L9.68661 1.6866L7.99992 0Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button class="btn btn-right">
+            <svg viewBox="0 0 15 16" fill="none">
+              <path
+                d="M6.80721 16L14.8071 8.00002L6.80721 0L5.12052 1.68669L10.2412 6.80729L-8.2016e-05 6.80729L-8.2016e-05 9.1928L10.2412 9.1928L5.12052 14.3134L6.80721 16Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="main--callme">
+        <div class="main--callme--text">
+          <h3>Book a call with me</h3>
+          <p>
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <button class="btn-free">Free Consultation</button>
       </div>
     </main>
 
-    Free Consultation Design solutions made easy With over ten years of
-    experience in various design disciplines, I’m your one-stop shop for your
-    design needs. Graphic Design UI/UX Apps Photography Illustrations Motion
-    Graphics I’m Amy, and I’d love to work on your next project I love working
-    with others to create beautiful design solutions. I’ve designed everything
-    from brand illustrations to complete mobile apps. I’m also handy with a
-    camera! Free Consultation My Work Book a call with me I’d love to have a
-    chat to see how I can help you. The best first step is for us to discuss
-    your project during a free consultation. Then we can move forward from
-    there. Free Consultation Free Consultation
+    <footer class="nav container">
+      <svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#030303" d="M0 0h64v64H0z" />
+          <circle stroke="#FFF7F0" stroke-width="4" cx="32" cy="32" r="14" />
+        </g>
+      </svg>
+      <a href="#">Free Consultation</a>
+    </footer>
   </body>
 </html>
