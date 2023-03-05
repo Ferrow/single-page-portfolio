@@ -31,3 +31,5 @@ nextBtn.addEventListener("click", function () {
 
 // Show the first slide when the page loads
 showSlide(index);
+
+console.log("fero");
