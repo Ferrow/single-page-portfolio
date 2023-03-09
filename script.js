@@ -1,7 +1,7 @@
 const carousel = document.getElementById("carousel");
 const slides = carousel.getElementsByClassName("slide");
-const prevBtn = document.querySelector(".btn-left");
-const nextBtn = document.querySelector(".btn-right");
+const prevBtn = document.querySelector(".btn--left");
+const nextBtn = document.querySelector(".btn--right");
 let index = 0;
 
 function showSlide(n) {

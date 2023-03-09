@@ -159,7 +159,7 @@ img {
   line-height: 1.9rem;
 }
 
-.btn-free {
+.btn--free {
   background-color: #eb7565;
   border: none;
   border-radius: 2em;
@@ -171,7 +171,7 @@ img {
   cursor: pointer;
 }
 
-.btn-free:hover {
+.btn--free:hover {
   background-color: #f6a560;
 }
 
